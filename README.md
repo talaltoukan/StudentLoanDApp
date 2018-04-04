@@ -1,5 +1,5 @@
 
-# StudentCoinHack
+# StudentLoanDApp
 A student loan network on the ethereum blockchain
 
 ## Truffle
@@ -129,8 +129,3 @@ Accounts.deployed().then(function(instance){return instance.getStudentPhotoURL(0
 
 
 function getStudentPhotoURL(uint idx) public view returns(string) { return slist[idx].photourl; }
-
-
-
-# StudentLoanDApp
-
