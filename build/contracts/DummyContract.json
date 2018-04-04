@@ -1,0 +1,2595 @@
+{
+  "contractName": "DummyContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "address"
+        }
+      ],
+      "name": "authorizeInFirstSet",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "address"
+        }
+      ],
+      "name": "authorizeInSecondSet",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "address"
+        }
+      ],
+      "name": "revokeInFirstSet",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "address"
+        }
+      ],
+      "name": "revokeInSecondSet",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "address"
+        }
+      ],
+      "name": "isAuthorizedInFirstSet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "agent",
+          "type": "address"
+        }
+      ],
+      "name": "isAuthorizedInSecondSet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getFirstSetAuthorizedAgents",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getSecondSetAuthorizedAgents",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6108de8061001e6000396000f30060606040526004361061008e576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fe1b53314610093578063589e9a75146100cc5780637a381130146101365780638eb509a114610187578063a224cfac146101c0578063b38b5e581461022a578063bcd3486614610263578063c30563021461029c575b600080fd5b341561009e57600080fd5b6100ca600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506102ed565b005b34156100d757600080fd5b6100df610304565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610122578082015181840152602081019050610107565b505050509050019250505060405180910390f35b341561014157600080fd5b61016d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061031b565b604051808215151515815260200191505060405180910390f35b341561019257600080fd5b6101be600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610338565b005b34156101cb57600080fd5b6101d361034f565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156102165780820151818401526020810190506101fb565b505050509050019250505060405180910390f35b341561023557600080fd5b610261600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610366565b005b341561026e57600080fd5b61029a600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061037d565b005b34156102a757600080fd5b6102d3600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610394565b604051808215151515815260200191505060405180910390f35b6103018160006103b190919063ffffffff16565b50565b61030c610821565b61031660036105f3565b905090565b600061033182600361068b90919063ffffffff16565b9050919050565b61034c8160036103b190919063ffffffff16565b50565b610357610821565b61036160006105f3565b905090565b61037a8160036106e490919063ffffffff16565b50565b6103918160006106e490919063ffffffff16565b50565b60006103aa82600061068b90919063ffffffff16565b9050919050565b60008060006103c0858561068b565b15156103cb57600080fd5b8460010160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054925060018560020180549050039150846002018281548110151561042d57fe5b906000526020600020900160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508460000160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81549060ff02191690558085600201848154811015156104be57fe5b906000526020600020900160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550828560010160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508460010160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000905584600201828154811015156105a357fe5b906000526020600020900160006101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055600185600201818180549050039150816105eb9190610835565b505050505050565b6105fb610821565b8160020180548060200260200160405190810160405280929190818152602001828054801561067f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019060010190808311610635575b50505050509050919050565b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6106ee828261080c565b15156106f957600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055508160020180548060010182816107699190610861565b9160005260206000209001600083909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060018260020180549050038260010160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505050565b6000610818838361068b565b15905092915050565b602060405190810160405280600081525090565b81548183558181151161085c5781836000526020600020918201910161085b919061088d565b5b505050565b81548183558181151161088857818360005260206000209182019101610887919061088d565b5b505050565b6108af91905b808211156108ab576000816000905550600101610893565b5090565b905600a165627a7a72305820977974938e43b5b413649b261516abd430fa83ae8d21615c1f40537808e1bf740029",
+  "deployedBytecode": "0x60606040526004361061008e576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fe1b53314610093578063589e9a75146100cc5780637a381130146101365780638eb509a114610187578063a224cfac146101c0578063b38b5e581461022a578063bcd3486614610263578063c30563021461029c575b600080fd5b341561009e57600080fd5b6100ca600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506102ed565b005b34156100d757600080fd5b6100df610304565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610122578082015181840152602081019050610107565b505050509050019250505060405180910390f35b341561014157600080fd5b61016d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061031b565b604051808215151515815260200191505060405180910390f35b341561019257600080fd5b6101be600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610338565b005b34156101cb57600080fd5b6101d361034f565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156102165780820151818401526020810190506101fb565b505050509050019250505060405180910390f35b341561023557600080fd5b610261600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610366565b005b341561026e57600080fd5b61029a600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061037d565b005b34156102a757600080fd5b6102d3600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610394565b604051808215151515815260200191505060405180910390f35b6103018160006103b190919063ffffffff16565b50565b61030c610821565b61031660036105f3565b905090565b600061033182600361068b90919063ffffffff16565b9050919050565b61034c8160036103b190919063ffffffff16565b50565b610357610821565b61036160006105f3565b905090565b61037a8160036106e490919063ffffffff16565b50565b6103918160006106e490919063ffffffff16565b50565b60006103aa82600061068b90919063ffffffff16565b9050919050565b60008060006103c0858561068b565b15156103cb57600080fd5b8460010160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054925060018560020180549050039150846002018281548110151561042d57fe5b906000526020600020900160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690508460000160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81549060ff02191690558085600201848154811015156104be57fe5b906000526020600020900160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550828560010160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508460010160008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000905584600201828154811015156105a357fe5b906000526020600020900160006101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055600185600201818180549050039150816105eb9190610835565b505050505050565b6105fb610821565b8160020180548060200260200160405190810160405280929190818152602001828054801561067f57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019060010190808311610635575b50505050509050919050565b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6106ee828261080c565b15156106f957600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055508160020180548060010182816107699190610861565b9160005260206000209001600083909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060018260020180549050038260010160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505050565b6000610818838361068b565b15905092915050565b602060405190810160405280600081525090565b81548183558181151161085c5781836000526020600020918201910161085b919061088d565b5b505050565b81548183558181151161088857818360005260206000209182019101610887919061088d565b5b505050565b6108af91905b808211156108ab576000816000905550600101610893565b5090565b905600a165627a7a72305820977974938e43b5b413649b261516abd430fa83ae8d21615c1f40537808e1bf740029",
+  "sourceMap": "653:1235:15:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "653:1235:15:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1080:110;;;;;;;;;;;;;;;;;;;;;;;;;;;;1749:137;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;1460:142:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1196:112;;;;;;;;;;;;;;;;;;;;;;;;;;;;1608:135;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;969:105:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;860:103;;;;;;;;;;;;;;;;;;;;;;;;;;;;1314:140;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1080:110;1138:45;1177:5;1138:18;:38;;:45;;;;:::i;:::-;1080:110;:::o;1749:137::-;1810:9;;:::i;:::-;1838:41;:19;:39;:41::i;:::-;1831:48;;1749:137;:::o;1460:142::-;1533:4;1556:39;1589:5;1556:19;:32;;:39;;;;:::i;:::-;1549:46;;1460:142;;;:::o;1196:112::-;1255:46;1295:5;1255:19;:39;;:46;;;;:::i;:::-;1196:112;:::o;1608:135::-;1668:9;;:::i;:::-;1696:40;:18;:38;:40::i;:::-;1689:47;;1608:135;:::o;969:105::-;1031:36;1061:5;1031:19;:29;;:36;;;;:::i;:::-;969:105;:::o;860:103::-;921:35;950:5;921:18;:28;;:35;;;;:::i;:::-;860:103;:::o;1314:140::-;1386:4;1409:38;1441:5;1409:18;:31;;:38;;;;:::i;:::-;1402:45;;1314:140;;;:::o;1118:1061:14:-;1433:25;1495:23;1563:19;1396:25;1409:4;1415:5;1396:12;:25::i;:::-;1388:34;;;;;;;;1461:4;:17;;:24;1479:5;1461:24;;;;;;;;;;;;;;;;1433:52;;1552:1;1521:4;:21;;:28;;;;:32;1495:58;;1585:4;:21;;1607:18;1585:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;1563:63;;1689:4;:15;;:22;1705:5;1689:22;;;;;;;;;;;;;;;;1682:29;;;;;;;;;;;1838:11;1792:4;:21;;1814:20;1792:43;;;;;;;;;;;;;;;;;;;:57;;;;;;;;;;;;;;;;;;1953:20;1920:4;:17;;:30;1938:11;1920:30;;;;;;;;;;;;;;;:53;;;;1990:4;:17;;:24;2008:5;1990:24;;;;;;;;;;;;;;;1983:31;;;2088:4;:21;;2110:18;2088:41;;;;;;;;;;;;;;;;;;;2081:48;;;;;;;;;;;2171:1;2139:4;:21;;:33;;;;;;;;;;;;;;:::i;:::-;;1118:1061;;;;;:::o;2536:162::-;2638:9;;:::i;:::-;2670:4;:21;;2663:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2536:162;;;:::o;2185:166::-;2295:4;2322;:15;;:22;2338:5;2322:22;;;;;;;;;;;;;;;;;;;;;;;;;2315:29;;2185:166;;;;:::o;825:287::-;924:28;940:4;946:5;924:15;:28::i;:::-;916:37;;;;;;;;989:4;964;:15;;:22;980:5;964:22;;;;;;;;;;;;;;;;:29;;;;;;;;;;;;;;;;;;1003:4;:21;;:33;;;;;;;;;;;:::i;:::-;;;;;;;;;;1030:5;1003:33;;;;;;;;;;;;;;;;;;;;;;;1104:1;1073:4;:21;;:28;;;;:32;1046:4;:17;;:24;1064:5;1046:24;;;;;;;;;;;;;;;:59;;;;825:287;;:::o;2357:173::-;2470:4;2498:25;2511:4;2517:5;2498:12;:25::i;:::-;2497:26;2490:33;;2357:173;;;;:::o;653:1235:15:-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "/*\n\n  Copyright 2017 Dharma Labs Inc.\n\n  Licensed under the Apache License, Version 2.0 (the \"License\");\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \"AS IS\" BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n\n*/\n\npragma solidity 0.4.19;\n\nimport \"../libraries/PermissionsLib.sol\";\n\n\ncontract DummyContract {\n    using PermissionsLib for PermissionsLib.Permissions;\n\n    PermissionsLib.Permissions private firstPermissionSet;\n    PermissionsLib.Permissions private secondPermissionSet;\n\n    function authorizeInFirstSet(address agent) public {\n        firstPermissionSet.authorize(agent);\n    }\n\n    function authorizeInSecondSet(address agent) public {\n        secondPermissionSet.authorize(agent);\n    }\n\n    function revokeInFirstSet(address agent) public {\n        firstPermissionSet.revokeAuthorization(agent);\n    }\n\n    function revokeInSecondSet(address agent) public {\n        secondPermissionSet.revokeAuthorization(agent);\n    }\n\n    function isAuthorizedInFirstSet(address agent) public constant returns (bool) {\n        return firstPermissionSet.isAuthorized(agent);\n    }\n\n    function isAuthorizedInSecondSet(address agent) public constant returns (bool) {\n        return secondPermissionSet.isAuthorized(agent);\n    }\n\n    function getFirstSetAuthorizedAgents() public view returns (address[]) {\n        return firstPermissionSet.getAuthorizedAgents();\n    }\n\n    function getSecondSetAuthorizedAgents() public view returns (address[]) {\n        return secondPermissionSet.getAuthorizedAgents();\n    }\n}\n",
+  "sourcePath": "/Users/talaltoukan/Documents/Blockchain/StudentLoanDApp/contracts/test/DummyContract.sol",
+  "ast": {
+    "absolutePath": "/Users/talaltoukan/Documents/Blockchain/StudentLoanDApp/contracts/test/DummyContract.sol",
+    "exportedSymbols": {
+      "DummyContract": [
+        3600
+      ]
+    },
+    "id": 3601,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3495,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "584:23:15"
+      },
+      {
+        "absolutePath": "/Users/talaltoukan/Documents/Blockchain/StudentLoanDApp/contracts/libraries/PermissionsLib.sol",
+        "file": "../libraries/PermissionsLib.sol",
+        "id": 3496,
+        "nodeType": "ImportDirective",
+        "scope": 3601,
+        "sourceUnit": 3494,
+        "src": "609:41:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3600,
+        "linearizedBaseContracts": [
+          3600
+        ],
+        "name": "DummyContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 3499,
+            "libraryName": {
+              "contractScope": null,
+              "id": 3497,
+              "name": "PermissionsLib",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3493,
+              "src": "688:14:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PermissionsLib_$3493",
+                "typeString": "library PermissionsLib"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "682:52:15",
+            "typeName": {
+              "contractScope": null,
+              "id": 3498,
+              "name": "PermissionsLib.Permissions",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3327,
+              "src": "707:26:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Permissions_$3327_storage_ptr",
+                "typeString": "struct PermissionsLib.Permissions storage pointer"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 3501,
+            "name": "firstPermissionSet",
+            "nodeType": "VariableDeclaration",
+            "scope": 3600,
+            "src": "740:53:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+              "typeString": "struct PermissionsLib.Permissions storage ref"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3500,
+              "name": "PermissionsLib.Permissions",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3327,
+              "src": "740:26:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Permissions_$3327_storage_ptr",
+                "typeString": "struct PermissionsLib.Permissions storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 3503,
+            "name": "secondPermissionSet",
+            "nodeType": "VariableDeclaration",
+            "scope": 3600,
+            "src": "799:54:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+              "typeString": "struct PermissionsLib.Permissions storage ref"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3502,
+              "name": "PermissionsLib.Permissions",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3327,
+              "src": "799:26:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Permissions_$3327_storage_ptr",
+                "typeString": "struct PermissionsLib.Permissions storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 3514,
+              "nodeType": "Block",
+              "src": "911:52:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3511,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3505,
+                        "src": "950:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3508,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "921:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3510,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "authorize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3370,
+                      "src": "921:28:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3512,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "921:35:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3513,
+                  "nodeType": "ExpressionStatement",
+                  "src": "921:35:15"
+                }
+              ]
+            },
+            "id": 3515,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "authorizeInFirstSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3506,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3505,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3515,
+                  "src": "889:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3504,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "889:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "888:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3507,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "911:0:15"
+            },
+            "scope": 3600,
+            "src": "860:103:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3526,
+              "nodeType": "Block",
+              "src": "1021:53:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3523,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3517,
+                        "src": "1061:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3520,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1031:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3522,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "authorize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3370,
+                      "src": "1031:29:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3524,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1031:36:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3525,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1031:36:15"
+                }
+              ]
+            },
+            "id": 3527,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "authorizeInSecondSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3518,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3517,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3527,
+                  "src": "999:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3516,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "999:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "998:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3519,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1021:0:15"
+            },
+            "scope": 3600,
+            "src": "969:105:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3538,
+              "nodeType": "Block",
+              "src": "1128:62:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3535,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3529,
+                        "src": "1177:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3532,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "1138:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3534,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "revokeAuthorization",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3449,
+                      "src": "1138:38:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3536,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1138:45:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3537,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1138:45:15"
+                }
+              ]
+            },
+            "id": 3539,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "revokeInFirstSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3530,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3529,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3539,
+                  "src": "1106:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3528,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1106:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1105:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3531,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1128:0:15"
+            },
+            "scope": 3600,
+            "src": "1080:110:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3550,
+              "nodeType": "Block",
+              "src": "1245:63:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3547,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3541,
+                        "src": "1295:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3544,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1255:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3546,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "revokeAuthorization",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3449,
+                      "src": "1255:39:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3548,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1255:46:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3549,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1255:46:15"
+                }
+              ]
+            },
+            "id": 3551,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "revokeInSecondSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3542,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3541,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3551,
+                  "src": "1223:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3540,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1223:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1222:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3543,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1245:0:15"
+            },
+            "scope": 3600,
+            "src": "1196:112:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3563,
+              "nodeType": "Block",
+              "src": "1392:62:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3560,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3553,
+                        "src": "1441:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3558,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "1409:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3559,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isAuthorized",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3464,
+                      "src": "1409:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address) view returns (bool)"
+                      }
+                    },
+                    "id": 3561,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1409:38:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 3557,
+                  "id": 3562,
+                  "nodeType": "Return",
+                  "src": "1402:45:15"
+                }
+              ]
+            },
+            "id": 3564,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isAuthorizedInFirstSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3554,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3553,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3564,
+                  "src": "1346:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3552,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1346:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1345:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3557,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3556,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3564,
+                  "src": "1386:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3555,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1386:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1385:6:15"
+            },
+            "scope": 3600,
+            "src": "1314:140:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3576,
+              "nodeType": "Block",
+              "src": "1539:63:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3573,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3566,
+                        "src": "1589:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3571,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1556:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3572,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isAuthorized",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3464,
+                      "src": "1556:32:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address) view returns (bool)"
+                      }
+                    },
+                    "id": 3574,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1556:39:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 3570,
+                  "id": 3575,
+                  "nodeType": "Return",
+                  "src": "1549:46:15"
+                }
+              ]
+            },
+            "id": 3577,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isAuthorizedInSecondSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3567,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3566,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3577,
+                  "src": "1493:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3565,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1493:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1492:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3570,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3569,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3577,
+                  "src": "1533:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3568,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1533:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1532:6:15"
+            },
+            "scope": 3600,
+            "src": "1460:142:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3587,
+              "nodeType": "Block",
+              "src": "1679:64:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3583,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "1696:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3584,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getAuthorizedAgents",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3492,
+                      "src": "1696:38:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$returns$_t_array$_t_address_$dyn_memory_ptr_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer) view returns (address[] memory)"
+                      }
+                    },
+                    "id": 3585,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1696:40:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                      "typeString": "address[] memory"
+                    }
+                  },
+                  "functionReturnParameters": 3582,
+                  "id": 3586,
+                  "nodeType": "Return",
+                  "src": "1689:47:15"
+                }
+              ]
+            },
+            "id": 3588,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getFirstSetAuthorizedAgents",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3578,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1644:2:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3582,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3581,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3588,
+                  "src": "1668:9:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[] memory"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3579,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1668:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 3580,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1668:9:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[] storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1667:11:15"
+            },
+            "scope": 3600,
+            "src": "1608:135:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3598,
+              "nodeType": "Block",
+              "src": "1821:65:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3594,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1838:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3595,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getAuthorizedAgents",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3492,
+                      "src": "1838:39:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$returns$_t_array$_t_address_$dyn_memory_ptr_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer) view returns (address[] memory)"
+                      }
+                    },
+                    "id": 3596,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1838:41:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                      "typeString": "address[] memory"
+                    }
+                  },
+                  "functionReturnParameters": 3593,
+                  "id": 3597,
+                  "nodeType": "Return",
+                  "src": "1831:48:15"
+                }
+              ]
+            },
+            "id": 3599,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSecondSetAuthorizedAgents",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3589,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1786:2:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3593,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3592,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3599,
+                  "src": "1810:9:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[] memory"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3590,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1810:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 3591,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1810:9:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[] storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1809:11:15"
+            },
+            "scope": 3600,
+            "src": "1749:137:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3601,
+        "src": "653:1235:15"
+      }
+    ],
+    "src": "584:1305:15"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/talaltoukan/Documents/Blockchain/StudentLoanDApp/contracts/test/DummyContract.sol",
+    "exportedSymbols": {
+      "DummyContract": [
+        3600
+      ]
+    },
+    "id": 3601,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3495,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".19"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "584:23:15"
+      },
+      {
+        "absolutePath": "/Users/talaltoukan/Documents/Blockchain/StudentLoanDApp/contracts/libraries/PermissionsLib.sol",
+        "file": "../libraries/PermissionsLib.sol",
+        "id": 3496,
+        "nodeType": "ImportDirective",
+        "scope": 3601,
+        "sourceUnit": 3494,
+        "src": "609:41:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3600,
+        "linearizedBaseContracts": [
+          3600
+        ],
+        "name": "DummyContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 3499,
+            "libraryName": {
+              "contractScope": null,
+              "id": 3497,
+              "name": "PermissionsLib",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3493,
+              "src": "688:14:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PermissionsLib_$3493",
+                "typeString": "library PermissionsLib"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "682:52:15",
+            "typeName": {
+              "contractScope": null,
+              "id": 3498,
+              "name": "PermissionsLib.Permissions",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3327,
+              "src": "707:26:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Permissions_$3327_storage_ptr",
+                "typeString": "struct PermissionsLib.Permissions storage pointer"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 3501,
+            "name": "firstPermissionSet",
+            "nodeType": "VariableDeclaration",
+            "scope": 3600,
+            "src": "740:53:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+              "typeString": "struct PermissionsLib.Permissions storage ref"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3500,
+              "name": "PermissionsLib.Permissions",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3327,
+              "src": "740:26:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Permissions_$3327_storage_ptr",
+                "typeString": "struct PermissionsLib.Permissions storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 3503,
+            "name": "secondPermissionSet",
+            "nodeType": "VariableDeclaration",
+            "scope": 3600,
+            "src": "799:54:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+              "typeString": "struct PermissionsLib.Permissions storage ref"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 3502,
+              "name": "PermissionsLib.Permissions",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3327,
+              "src": "799:26:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Permissions_$3327_storage_ptr",
+                "typeString": "struct PermissionsLib.Permissions storage pointer"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 3514,
+              "nodeType": "Block",
+              "src": "911:52:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3511,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3505,
+                        "src": "950:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3508,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "921:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3510,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "authorize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3370,
+                      "src": "921:28:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3512,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "921:35:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3513,
+                  "nodeType": "ExpressionStatement",
+                  "src": "921:35:15"
+                }
+              ]
+            },
+            "id": 3515,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "authorizeInFirstSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3506,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3505,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3515,
+                  "src": "889:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3504,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "889:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "888:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3507,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "911:0:15"
+            },
+            "scope": 3600,
+            "src": "860:103:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3526,
+              "nodeType": "Block",
+              "src": "1021:53:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3523,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3517,
+                        "src": "1061:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3520,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1031:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3522,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "authorize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3370,
+                      "src": "1031:29:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3524,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1031:36:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3525,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1031:36:15"
+                }
+              ]
+            },
+            "id": 3527,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "authorizeInSecondSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3518,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3517,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3527,
+                  "src": "999:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3516,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "999:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "998:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3519,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1021:0:15"
+            },
+            "scope": 3600,
+            "src": "969:105:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3538,
+              "nodeType": "Block",
+              "src": "1128:62:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3535,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3529,
+                        "src": "1177:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3532,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "1138:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3534,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "revokeAuthorization",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3449,
+                      "src": "1138:38:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3536,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1138:45:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3537,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1138:45:15"
+                }
+              ]
+            },
+            "id": 3539,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "revokeInFirstSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3530,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3529,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3539,
+                  "src": "1106:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3528,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1106:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1105:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3531,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1128:0:15"
+            },
+            "scope": 3600,
+            "src": "1080:110:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3550,
+              "nodeType": "Block",
+              "src": "1245:63:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3547,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3541,
+                        "src": "1295:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3544,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1255:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3546,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "revokeAuthorization",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3449,
+                      "src": "1255:39:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address)"
+                      }
+                    },
+                    "id": 3548,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1255:46:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 3549,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1255:46:15"
+                }
+              ]
+            },
+            "id": 3551,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "revokeInSecondSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3542,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3541,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3551,
+                  "src": "1223:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3540,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1223:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1222:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3543,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1245:0:15"
+            },
+            "scope": 3600,
+            "src": "1196:112:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3563,
+              "nodeType": "Block",
+              "src": "1392:62:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3560,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3553,
+                        "src": "1441:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3558,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "1409:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3559,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isAuthorized",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3464,
+                      "src": "1409:31:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address) view returns (bool)"
+                      }
+                    },
+                    "id": 3561,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1409:38:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 3557,
+                  "id": 3562,
+                  "nodeType": "Return",
+                  "src": "1402:45:15"
+                }
+              ]
+            },
+            "id": 3564,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isAuthorizedInFirstSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3554,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3553,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3564,
+                  "src": "1346:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3552,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1346:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1345:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3557,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3556,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3564,
+                  "src": "1386:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3555,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1386:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1385:6:15"
+            },
+            "scope": 3600,
+            "src": "1314:140:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3576,
+              "nodeType": "Block",
+              "src": "1539:63:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 3573,
+                        "name": "agent",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3566,
+                        "src": "1589:5:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3571,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1556:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3572,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isAuthorized",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3464,
+                      "src": "1556:32:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer,address) view returns (bool)"
+                      }
+                    },
+                    "id": 3574,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1556:39:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 3570,
+                  "id": 3575,
+                  "nodeType": "Return",
+                  "src": "1549:46:15"
+                }
+              ]
+            },
+            "id": 3577,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isAuthorizedInSecondSet",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3567,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3566,
+                  "name": "agent",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3577,
+                  "src": "1493:13:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3565,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1493:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1492:15:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3570,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3569,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3577,
+                  "src": "1533:4:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3568,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1533:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1532:6:15"
+            },
+            "scope": 3600,
+            "src": "1460:142:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3587,
+              "nodeType": "Block",
+              "src": "1679:64:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3583,
+                        "name": "firstPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3501,
+                        "src": "1696:18:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3584,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getAuthorizedAgents",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3492,
+                      "src": "1696:38:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$returns$_t_array$_t_address_$dyn_memory_ptr_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer) view returns (address[] memory)"
+                      }
+                    },
+                    "id": 3585,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1696:40:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                      "typeString": "address[] memory"
+                    }
+                  },
+                  "functionReturnParameters": 3582,
+                  "id": 3586,
+                  "nodeType": "Return",
+                  "src": "1689:47:15"
+                }
+              ]
+            },
+            "id": 3588,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getFirstSetAuthorizedAgents",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3578,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1644:2:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3582,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3581,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3588,
+                  "src": "1668:9:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[] memory"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3579,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1668:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 3580,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1668:9:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[] storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1667:11:15"
+            },
+            "scope": 3600,
+            "src": "1608:135:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3598,
+              "nodeType": "Block",
+              "src": "1821:65:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3594,
+                        "name": "secondPermissionSet",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3503,
+                        "src": "1838:19:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Permissions_$3327_storage",
+                          "typeString": "struct PermissionsLib.Permissions storage ref"
+                        }
+                      },
+                      "id": 3595,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getAuthorizedAgents",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3492,
+                      "src": "1838:39:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Permissions_$3327_storage_ptr_$returns$_t_array$_t_address_$dyn_memory_ptr_$bound_to$_t_struct$_Permissions_$3327_storage_ptr_$",
+                        "typeString": "function (struct PermissionsLib.Permissions storage pointer) view returns (address[] memory)"
+                      }
+                    },
+                    "id": 3596,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1838:41:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                      "typeString": "address[] memory"
+                    }
+                  },
+                  "functionReturnParameters": 3593,
+                  "id": 3597,
+                  "nodeType": "Return",
+                  "src": "1831:48:15"
+                }
+              ]
+            },
+            "id": 3599,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getSecondSetAuthorizedAgents",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3589,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1786:2:15"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3593,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3592,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3599,
+                  "src": "1810:9:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
+                    "typeString": "address[] memory"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 3590,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1810:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 3591,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1810:9:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[] storage pointer"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1809:11:15"
+            },
+            "scope": 3600,
+            "src": "1749:137:15",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3601,
+        "src": "653:1235:15"
+      }
+    ],
+    "src": "584:1305:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
+  },
+  "networks": {
+    "4447": {
+      "events": {},
+      "links": {},
+      "address": "0x647520713d70a754bad30a6c25c58dff9621ea08",
+      "transactionHash": "0x7e201a88a2137093f485e486cd1a88711d90d4a07a534b1eb37923dbe961f1d0"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-04-04T02:48:11.788Z"
+}
